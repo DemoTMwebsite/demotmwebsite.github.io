@@ -94,28 +94,30 @@
                 Contact Us
               </h2>
             </div>
-            <form action="">
+            <form action="thankyou.html" name="myForm" onsubmit="return validateForm()" method="post" required>
               <div>
-                <input type="text" placeholder="Full Name " />
+                <input type="text" placeholder="Full Name " required name="fname"/>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" required />
               </div>
               <div>
-                <input type="text" placeholder="Phone number" />
+                <input type="text" placeholder="Phone number" required />
               </div>
               <div>
                 <input type="text" class="message-box" placeholder="Message" />
               </div>
               <div class="d-flex ">
-                <button onclick="myFunction()">       SEND </button>
-                     <script>
-function myFunction() {
-  alert("successfully submitted !");
-}
-</script>                        
+                <button type="submit" >       SEND </button>
+                    
               </div>
-            </form>
+			  <!-- onClick="myFunction()"
+			  <script>
+						function myFunction() {
+						alert("successfully submitted !!");
+							}
+			</script> 
+			-->
           </div>
         </div>
         <div class="col-md-6">
@@ -231,6 +233,5 @@ function myFunction() {
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 
-</body>
-
+</body>                  
 </html>
